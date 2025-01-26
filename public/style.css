@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  background-color: lightgreen;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav h1 a {
+  font-size: 22px;
+}
+
+nav a {
+  color: white;
+  margin: 0 20px;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: green;
+}
+
+.container {
+  margin: 20px;
+}
+
+.blog-card {
+  margin: 20px 0;
+}
+
+/* blog create page css */
+.blog-form {
+  max-width: 800px;
+  margin: auto;
+  border: 1px solid lightgreen;
+  padding: 40px;
+}
+
+.blog-form h1 {
+  color: green;
+}
+
+.form-group {
+  margin: 10px 0;
+}
+.form-group label {
+  font-size: 18px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid green;
+}
+
+.blog-create-btn {
+  background-color: green;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: 1px solid green;
+  color: white;
+}
+
+.blog-delete-btn {
+  background-color: rgb(230, 83, 83);
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: 1px solid rgb(230, 83, 83);
+  color: white;
+}
+
+/* -------- */
+
+/* Container for the blog cards, using CSS Grid */
+.blog-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 20px; /* Space between the columns */
+}
+
+/* Each blog card gets placed in the grid */
+.blog-card {
+  border: 2px solid rgb(43, 224, 67); /* Black border */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* Styling for the delete button */
+.blog-delete-btn {
+  border: 2px solid red; /* Red border */
+  padding: 10px 15px;
+  background-color: #fff; /* White background */
+  color: red; /* Red text */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.blog-delete-btn:hover {
+  background-color: red; /* Red background on hover */
+  color: #fff; /* White text on hover */
+}
